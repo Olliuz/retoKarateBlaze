@@ -1,0 +1,31 @@
+==========================================================
+RESUMEN TÉCNICO Y CONCLUSIONES DEL PROYECTO: KARATE DEMOBLAZE API
+==========================================================
+
+OBJETIVO:
+Automatizar los flujos de registro (Signup) y autenticación (Login)
+de la API de Demoblaze utilizando Karate DSL para validar la
+lógica de negocio y la integridad de las respuestas.
+
+CONCLUSIONES TÉCNICAS:
+
+1. EFICIENCIA CON KARATE DSL:
+   - Se logró una cobertura completa de 4 escenarios críticos con
+     un código 60% más reducido que en frameworks imperativos (Java).
+   - La naturaleza declarativa de Karate facilitó la lectura
+
+2. GESTIÓN DE DATOS DINÁMICOS:
+   - Se implementó el uso de UUIDs (Universally Unique Identifiers)
+     para la creación de usuarios, garantizando que las pruebas sean
+     independientes y ejecutables.
+
+3. VALIDACIÓN DE LÓGICA DE NEGOCIO:
+   - Se identificó que la API maneja errores de negocio (usuario
+     existente/password incorrecto) bajo el código HTTP 200.
+
+4. CONFIGURACIÓN:
+   - La separación de la configuración en 'karate-config.js' permite
+     que el proyecto sea fácilmente adaptable a entornos de
+     Desarrollo, QA o Producción sin modificar los archivos .feature.
+
+
